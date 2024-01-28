@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="style/sign_up.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="login">
+            <div class="empty">
+                <img src="img/Login_img.png" alt="">
+            </div>
+            <div class="forms">
+                <form>
+                    <h2>Login your Account</h2>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter your Email here" id="email" required>
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Enter your Password here" id="password" required>
+                    <button id="login_b" onclick="login()">Login Here</button>
+                    <h3>- OR -</h3>
+                    <p>Create an account? <a href="#" onclick="showRegistrationForm()">Sign-Up</a></p>
+                </form>
+            </div>
+        </div>
+
+
+        <div id="sign_up" style="display: none;">
+            <div class="sign">
+                <div class="forms">
+                    <form>
+                        <h2>Create your Account</h2>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="regName" placeholder="Enter your Name here" required>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="regEmail" placeholder="Enter your Email here" required>
+                        <label for="pass">Password</label>
+                        <input type="password" name="pass" id="regPassword" placeholder="Enter your Password here" required>
+                        <div class="ages">
+                            <label for="number">Age</label>
+                            <input type="number" name="number" id="regAge" placeholder="18" required>
+                        </div>                    
+                        <div class="allgen">
+                            <label for="gender">Gender</label>
+                            <div class="genders">
+                                <label><input type="radio" name="gender" class="gen" value="male" required>Male</label>
+                                <label><input type="radio" name="gender" class="gen" value="female" required>Female</label>
+                            </div>
+                        </div>
+                        <button class="login_b" onclick="register()">Sign-Up</button>
+                        <h3>- OR -</h3>
+                        <p>Create an account? <a href="#" onclick="showLoginForm()">Login</a></p>
+                    </form>
+                </div>
+                <div class="empty">
+                    <img src="img/signup_img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="build/script.js"></script>
+</body>
+</html>
